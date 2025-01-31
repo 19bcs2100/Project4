@@ -152,7 +152,7 @@ let mm = gsap.matchMedia();
                 stagger: 1,
                 scrollTrigger: {
                     trigger: ".llastleft",
-                    markers: true,
+                    //markers: true,
                     start: "-12% top", // Adjust scroll start position
                     end: "110% top", // Adjust scroll end position
                     pin: true, // Pin the element
