@@ -1,0 +1,245 @@
+
+@media(max-width:1450px) {
+    .downcontent .downleft{
+        top:-30px;
+        left:50%;
+        transform: translateX(-50%);
+        /* right:50%; */
+        /* width: 100%; */
+        /* margin:auto; */
+        
+    }
+    .downcontent .downright{
+        display: none;
+    }
+}
+
+@media(max-width:1260px) {
+    
+    .upcontent{
+        flex-wrap: wrap;
+    }
+    .upcontent .upleft,
+    .upcontent .upmid {
+        width: 50%;
+    }
+    .upcontent .upright{
+        margin-top:50px;
+        width: 100%;
+    }
+}
+
+@media(max-width:1200px){
+
+
+
+/* .downcontent{
+    justify-content: center;
+} */
+
+
+}
+
+@media(max-width:992px) {
+    .deev3right span {
+        width: 90%;
+
+    }
+
+    .deev3right {
+        padding-left: 0;
+    }
+
+    .deev3right a {
+        /* width: 30%; */
+    }
+
+    .threeimage {
+        flex-wrap: wrap;
+    }
+
+    .threeimage1,
+    .threeimage2,
+    .threeimage3 {
+        width: 48%;
+    }
+
+    .animatetext {
+        flex-wrap: wrap-reverse;
+    }
+
+    .animleft {
+        margin-top: 20px;
+    }
+
+    .animleft,
+    .animright {
+        width: 98%;
+    }
+
+    .threeimage {
+        padding-bottom: 100px;
+    }
+
+.downcontent{
+    margin-top:100px;
+}
+
+.lastcontent3{
+    margin-top:50px;
+flex-wrap:wrap;
+
+display: flex;
+justify-content: center;
+}
+.llastleft{
+    width: 50%;
+}
+.lastleft, .lastright{
+    width: 90%;
+    height: 100%;
+}
+
+
+.fmid{
+    margin-top:50px;
+}
+
+.contain {
+    margin-top: -200px;
+}
+
+
+
+
+}
+
+
+@media(max-width:768px) {
+    .main {
+        width: 99%;
+    }
+
+    .div1 {
+        width: 100%;
+    }
+
+    .footer{
+        margin-top:50px;
+    }
+
+}
+
+@media(max-width:770px){
+    .footer{
+        margin-top:80px;
+    }
+}
+
+@media(max-width:576px) {
+
+    .navigation {
+        padding: 10px 6%;
+    }
+
+    .whatwedo {
+        flex-wrap: wrap;
+    }
+
+    .whatleft,
+    .whatmid,
+    .whatright {
+        width: 48%;
+    }
+
+    .whatright {
+        margin-top: 50px;
+    }
+
+    .threeimage1,
+    .threeimage2,
+    .threeimage3 {
+        width: 98%;
+    }
+
+    .upcontent .upleft,
+    .upcontent .upmid {
+        width: 100%;
+    }
+
+    .upcontent .upmid{
+        margin-top:50px;
+    }
+
+.downcontent .downleft{
+    font-size: .5rem;
+    letter-spacing: 0;
+}
+
+
+
+
+}
+
+
+@media(max-width:500px) {
+    .weare {
+        top: 0;
+        left: -60px;
+    }
+
+    .deev3right a {
+        scale: 0.6;
+    }
+
+    .main {
+        padding-top: 100px;
+    }
+}
+
+
+
+
+@media(max-width:375px) {
+    .weare {
+        top: 0;
+        left: -50px;
+    }
+
+    .fleft{
+        left:20px;
+    }
+    .fright{
+        right:20px;
+    }
+    
+    .footer{
+        margin-top:150px;
+    }
+}
+
+@media(max-width:300px) {
+    .weare {
+        top: 0;
+        left: -40px;
+    }
+
+    .whatleft,
+    .whatmid,
+    .whatright {
+        width: 100%;
+    }
+
+    .whatmid {
+        margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
+}
