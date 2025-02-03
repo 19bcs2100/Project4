@@ -176,7 +176,12 @@ justify-content: center;
     letter-spacing: 0;
 }
 
-
+.parent{
+    width: 98%;
+}
+.div3{
+    width:98%;
+}
 
 
 }
