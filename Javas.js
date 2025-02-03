@@ -116,19 +116,283 @@ gsap.to(".animleft", {
     }
 });
 
-gsap.to(".downmid li", {
-    // duration:1,
-    color: "white",
-    filter: "blur(0)",
-    stagger: 1,
+// all list items selecting li(s) like arrays in gsap
+// gsap.utils.toArray('.downmid ul li').forEach((item, index) => {
+//     gsap.to(item, {
+//         scrollTrigger: {
+//             trigger: item,
+//             start: 'top center',  // When the top of the item hits the center of the viewport
+//             end: 'bottom center', // When the bottom of the item hits the center of the viewport
+//             scrub: 1,             // Smooth transition with scrolling
+//             markers: true,        // Show debug markers (remove in production)
+//             onEnter: () => gsap.to(item, {
+//                 color: 'white', 
+//             }),  // Glow effect when entering
+//             onLeave: () => gsap.to(item, {
+//                 color: 'initial', 
+//             }),  // Revert to original state when leaving
+//             onLeaveBack: () => gsap.to(item, {
+//                 color: 'initial', 
+//             }),  // Revert when scrolling back up
+//             onEnterBack: () => gsap.to(item, {
+//                 color: 'white', 
+//             })  // Glow effect when re-entering the viewport from the top
+//         }
+//     });
+// });
+
+
+
+
+// One By One approach
+gsap.to(".li1", {
     scrollTrigger: {
-        // markers:true,
-        trigger: ".downmid li",
-        start: "top center",
-        end: "500vh top",
-        scrub: 1,
-    },
-});
+      trigger: ".li1",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li1", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li1", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li1", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li1", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li2", {
+    scrollTrigger: {
+      trigger: ".li2",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li2", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li2", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li2", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li2", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li3", {
+    scrollTrigger: {
+      trigger: ".li3",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li3", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li3", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li3", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li3", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li4", {
+    scrollTrigger: {
+      trigger: ".li4",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li4", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li4", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li4", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li4", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li5", {
+    scrollTrigger: {
+      trigger: ".li5",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li5", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li5", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li5", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li5", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li6", {
+    scrollTrigger: {
+      trigger: ".li6",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li6", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li6", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li6", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li6", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+gsap.to(".li7", {
+    scrollTrigger: {
+      trigger: ".li7",
+      start: "top center",   // When the top of the item hits the center of the viewport
+      end: "bottom center",  // When the bottom of the item hits the center of the viewport
+    //   scrub: 1,              // Smooth transition with scrolling
+      markers: false,         // Show debug markers (remove in production)
+      onEnter: () => gsap.to(".li7", {
+        color: 'white',            // Change text color to white
+        filter: 'blur(0)',         // Remove the blur effect smoothly
+        // duration: 0.5,             // Smooth transition for blur removal
+        // ease: 'linear'         // Ease out for smooth entry
+      }),
+      onLeave: () => gsap.to(".li7", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit
+      }),
+      onLeaveBack: () => gsap.to(".li7", {
+        color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
+        filter: 'blur(4px)',       // Reapply blur effect smoothly
+        // duration: 0.5,             // Smooth transition back to blur
+        // ease: 'linear'          // Ease in for smooth exit when scrolling up
+      }),
+      onEnterBack: () => gsap.to(".li7", {
+        color: 'white',            // Keep text color white
+        filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
+        // duration: 0.5,             // Smooth transition back to no blur
+        // ease: 'linear'         // Ease out for smooth entry when scrolling up
+      })
+    }
+  });
+  
+
+  
+  
+  
+  
+
+
+  
+  
+ 
+
+
+
+
+
+
 
 
 gsap.from(".lastcontent img", {
@@ -143,38 +407,9 @@ gsap.from(".lastcontent img", {
     },
 });
 
-
-let mm = gsap.matchMedia();
-
-
-            mm.add("(min-width:992px)",()=>{ 
-            gsap.to(".lastcontent3", {
-                stagger: 1,
-                scrollTrigger: {
-                    trigger: ".llastleft",
-                    //markers: true,
-                    start: "-12% top", // Adjust scroll start position
-                    end: "110% top", // Adjust scroll end position
-                    pin: true, // Pin the element
-                    scrub: 1, // Smooth scroll sync with animation
-                },
-            });
-        });
-            // Initial call to handle animation
-handleanim();
-
-// Listen for window resize event
-window.addEventListener("resize", handleanim);
-
-let animation;
-
-// This function will handle animations dynamically on resize
-function handleAnimation() {
-    // Invalidate and recalculate the ScrollTriggers
-    if (window.innerWidth >= 1450) {
-        // If window width is large enough, enable the animation
-        if (!animation) {
-            animation = gsap.to(".downcontent", {
+let mm2= gsap.matchMedia();
+mm2.add("(min-width: 1451px)", () => {
+        gsap.to(".downcontent", {
                 duration: 1,
                 stagger: 1,
                 scrollTrigger: {
@@ -194,22 +429,8 @@ function handleAnimation() {
                     pin: true,
                 },
             });
-        }
-    } else {
-        // If window width is smaller, remove the animation
-        if (animation) {
-            gsap.killTweensOf(".downleft"); // Stop the animation
-            gsap.killTweensOf(".downright"); // Stop the animation
-            animation = null; // Clear the reference to the animation
-        }
-    }
-
-    // Make sure the ScrollTrigger is updated
-    ScrollTrigger.refresh();
-}
-
-// Initial call to handleAnimation
-handleAnimation();
+        });
+      
 
 // Listen for resize events
 window.addEventListener("resize", () => {
