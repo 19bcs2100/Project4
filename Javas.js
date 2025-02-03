@@ -146,35 +146,25 @@ gsap.to(".animleft", {
 
 // One By One approach
 gsap.to(".li1", {
-    scrollTrigger: {
-      trigger: ".li1",
+  scrollTrigger: {
+    trigger: ".li1",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li1", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li1", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li1", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li1", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -183,31 +173,21 @@ gsap.to(".li2", {
       trigger: ".li2",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li2", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li2", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li2", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li2", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -216,31 +196,21 @@ gsap.to(".li3", {
       trigger: ".li3",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li3", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li3", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li3", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li3", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -249,31 +219,21 @@ gsap.to(".li4", {
       trigger: ".li4",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li4", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li4", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li4", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li4", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -282,31 +242,21 @@ gsap.to(".li5", {
       trigger: ".li5",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li5", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li5", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li5", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li5", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -315,31 +265,21 @@ gsap.to(".li6", {
       trigger: ".li6",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li6", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li6", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li6", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li6", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
@@ -348,31 +288,21 @@ gsap.to(".li7", {
       trigger: ".li7",
       start: "top center",   // When the top of the item hits the center of the viewport
       end: "bottom center",  // When the bottom of the item hits the center of the viewport
-    //   scrub: 1,              // Smooth transition with scrolling
-      markers: false,         // Show debug markers (remove in production)
       onEnter: () => gsap.to(".li7", {
         color: 'white',            // Change text color to white
         filter: 'blur(0)',         // Remove the blur effect smoothly
-        // duration: 0.5,             // Smooth transition for blur removal
-        // ease: 'linear'         // Ease out for smooth entry
       }),
       onLeave: () => gsap.to(".li7", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit
       }),
       onLeaveBack: () => gsap.to(".li7", {
         color: 'rgba(255, 255, 255, 0.3)',            // Keep text color white
         filter: 'blur(4px)',       // Reapply blur effect smoothly
-        // duration: 0.5,             // Smooth transition back to blur
-        // ease: 'linear'          // Ease in for smooth exit when scrolling up
       }),
       onEnterBack: () => gsap.to(".li7", {
         color: 'white',            // Keep text color white
         filter: 'blur(0)',         // Remove blur effect smoothly when re-entering
-        // duration: 0.5,             // Smooth transition back to no blur
-        // ease: 'linear'         // Ease out for smooth entry when scrolling up
       })
     }
   });
